@@ -233,3 +233,9 @@ body .box .form .btn button span:nth-child(4) {
         bottom: 100%;
     }
 }
+
+@media screen and (max-width: 475px) {
+    body .box {
+        width: 90%;
+    }
+}
