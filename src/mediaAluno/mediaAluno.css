@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    box-shadow: 0px 0px 28px 3px rgba(255, 255, 255, 0.815);
+    padding: 0.8em 2em;
+    background-color: #400f6e;
+    border-radius: 4px;
+}
+
+.caixa {
+    width: 420px;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+img {
+    width: 180px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: 2px solid #ff0000;
+    border: 2px solid transparent;
+}
+
+button {
+    border: 2px solid transparent;
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    font-size: 1.6em;
+    color: #fff;
+    position: relative;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-top: 2em;
+}
+
+button:hover {
+    background-color: #ff0000;
+    box-shadow: 0px 0px 32px 8px #ff0000;
+}
+
+span:nth-of-type(1) {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: -2px;
+    width: 2px;
+    animation: topColor 1s linear infinite;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+@keyframes topColor {
+    0% {
+        background-color: transparent;
+        height: 0px;
+    }
+
+    100% {
+        background-color: #ff0000;
+        height: 75px;
+    }
+}
+
+span:nth-of-type(2) {
+    display: block;
+    position: absolute;
+    top: 0px;
+    height: 2px;
+    animation: LeftColor 1s linear infinite;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+@keyframes LeftColor {
+    0% {
+        background-color: transparent;
+        width: 0px;
+    }
+
+    100% {
+        background-color: #ff0000;
+        width: 197px;
+    }
+}
+
+span:nth-of-type(3) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 2px;
+    animation: RightColor 1s linear infinite;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+@keyframes RightColor {
+    0% {
+        background-color: transparent;
+        height: 0px;
+    }
+
+    100% {
+        background-color: #ff0000;
+        height: 76px;
+    }
+}
+
+span:nth-of-type(4) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    animation: BottomColor 1s linear infinite;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+@keyframes BottomColor {
+    0% {
+        background-color: transparent;
+        width: 0px;
+    }
+
+    100% {
+        background-color: #ff0000;
+        width: 198px;
+    }
+}
