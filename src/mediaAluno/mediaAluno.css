@@ -164,3 +164,21 @@ span:nth-of-type(4) {
         width: 198px;
     }
 }
+
+@media screen and (max-width: 575px) {
+    a {
+        margin-top: 1em;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    form {
+        /* padding: 0em 1em; */
+        width: 305px;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .caixa {
+        width: 100%;
+    }
+}
